@@ -5,7 +5,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import React, { useState, useRef } from "react";
 import HomeStyle from "./Home.module.css";
 
-const Home = () => {
+function Home(){
   const [currentIndex, setCurrentIndex] = useState(0);
   const sliderRef = useRef(null);
 
@@ -23,6 +23,8 @@ const Home = () => {
   };
 
   return (
+    <>
+    {/* banner start */}
     <div className={HomeStyle.banner}>
       <div
         className={`${HomeStyle.slider} slider`}
@@ -58,7 +60,26 @@ const Home = () => {
       <i class="fa-solid fa-caret-right fa-2xl"></i>
       </div>
     </div>
+    <section className={HomeStyle.section}>
+        <div className={`${HomeStyle.sectionImg1} ${HomeStyle.sectionImg}`}>
+           <h1>Women</h1>         
+           <p>spring 2018</p>
+           <span>SHOP NOW</span>
+        </div>
+        <div className={`${HomeStyle.sectionImg2} ${HomeStyle.sectionImg}`}>
+           <h1>Men</h1> 
+           <p>spring 2018</p>
+           <span>SHOP NOW</span>
+        </div>
+        <div className={`${HomeStyle.sectionImg3} ${HomeStyle.sectionImg}`}>
+           <h1>Accessories</h1> 
+           <p>New Trend</p>
+           <span>SHOP NOW</span>
+        </div>
+    </section>
+    {/* banner end */}
+    </>
   );
-};
+}
 
 export default Home;

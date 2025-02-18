@@ -24,6 +24,7 @@ function Navbar() {
         <i class="fa-regular fa-heart fa-xl"></i>
         </div>
       </nav>
+      <div className={NavStyle.space}></div>
     </>
   );
 }

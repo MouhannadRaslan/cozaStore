@@ -34,3 +34,6 @@ li{
 .icons i:hover{
     color: rgb(113, 127, 224);
 }
+.space{
+    height: 70px;
+}
