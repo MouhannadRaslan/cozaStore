@@ -1,6 +1,5 @@
-import banner1 from "../assets/banner-01.jpg";
-import banner2 from "../assets/banner-02.jpg";
-import banner3 from "../assets/banner-03.jpg";
+import Product from "./Product";
+import Footer from "./Footer";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import React, { useState, useRef } from "react";
 import HomeStyle from "./Home.module.css";
@@ -78,6 +77,8 @@ function Home(){
         </div>
     </section>
     {/* banner end */}
+    <Product/>
+    <Footer/>
     </>
   );
 }

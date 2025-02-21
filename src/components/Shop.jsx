@@ -1,9 +1,11 @@
-
+import Product from "./Product";
+import Footer from "./Footer";
 
 function Shop(){
     return(
         <>
-            
+            <Product/>
+            <Footer/>
         </>
     )
 }
