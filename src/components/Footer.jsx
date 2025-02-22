@@ -30,7 +30,7 @@ function Footer(){
                     <div className={FooterStyle.footerSection}>
                         <h1 className={FooterStyle.h1}>Newsletter</h1>
                         <form action="">
-                            <input type="email" placeholder='email@example.com' />
+                            <input className={FooterStyle.email} type="email" placeholder='email@example.com' />
                             <button className={FooterStyle.btn}>SUBSCRIBE</button>
                         </form>
                     </div>

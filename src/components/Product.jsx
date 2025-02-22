@@ -1,7 +1,19 @@
 import ProductStyle from "./Product.module.css";
 import "font-awesome/css/font-awesome.min.css";
+import { useState } from "react";
 
 function Product() {
+  const [isOpen, setIsOpen] = useState(false); //offcanvas menu
+
+  // add to cart
+  const [cart, setCart] = useState([]);
+  const addToCart = (item) => {
+    setCart([...cart, item]);
+  };
+  const removeFromCart = (index) => {
+    setCart(cart.filter((_, i) => i !== index));
+  };
+  const totalPrice = cart.reduce((total, item) => total + item.price, 0);
   return (
     <>
       <div className={ProductStyle.product}>
@@ -29,7 +41,12 @@ function Product() {
             <div className={ProductStyle.productContent}>
               <div className={ProductStyle.imgContainer}>
                 <div className={`${ProductStyle.img1} ${ProductStyle.img}`}>
-                  <button className={ProductStyle.addToCart}>
+                  <button
+                    className={ProductStyle.addToCart}
+                    onClick={() =>
+                      addToCart({ name: "Esprit Ruffle Shirt", price: 16.64 })
+                    }
+                  >
                     Add To Cart
                   </button>
                 </div>
@@ -45,7 +62,12 @@ function Product() {
             <div className={ProductStyle.productContent}>
               <div className={ProductStyle.imgContainer}>
                 <div className={`${ProductStyle.img2} ${ProductStyle.img}`}>
-                  <button className={ProductStyle.addToCart}>
+                  <button
+                    className={ProductStyle.addToCart}
+                    onClick={() =>
+                      addToCart({ name: "Herschel supply", price: 35.31 })
+                    }
+                  >
                     Add To Cart
                   </button>
                 </div>
@@ -61,7 +83,12 @@ function Product() {
             <div className={ProductStyle.productContent}>
               <div className={ProductStyle.imgContainer}>
                 <div className={`${ProductStyle.img3} ${ProductStyle.img}`}>
-                  <button className={ProductStyle.addToCart}>
+                  <button
+                    className={ProductStyle.addToCart}
+                    onClick={() =>
+                      addToCart({ name: "Only Check Trouser", price: 25.5 })
+                    }
+                  >
                     Add To Cart
                   </button>
                 </div>
@@ -77,7 +104,12 @@ function Product() {
             <div className={ProductStyle.productContent}>
               <div className={ProductStyle.imgContainer}>
                 <div className={`${ProductStyle.img4} ${ProductStyle.img}`}>
-                  <button className={ProductStyle.addToCart}>
+                  <button
+                    className={ProductStyle.addToCart}
+                    onClick={() =>
+                      addToCart({ name: "Classic Trench Coat", price: 75.0 })
+                    }
+                  >
                     Add To Cart
                   </button>
                 </div>
@@ -95,7 +127,12 @@ function Product() {
             <div className={ProductStyle.productContent}>
               <div className={ProductStyle.imgContainer}>
                 <div className={`${ProductStyle.img5} ${ProductStyle.img}`}>
-                  <button className={ProductStyle.addToCart}>
+                  <button
+                    className={ProductStyle.addToCart}
+                    onClick={() =>
+                      addToCart({ name: "Front Pocket Jumper", price: 34.75 })
+                    }
+                  >
                     Add To Cart
                   </button>
                 </div>
@@ -111,7 +148,15 @@ function Product() {
             <div className={ProductStyle.productContent}>
               <div className={ProductStyle.imgContainer}>
                 <div className={`${ProductStyle.img6} ${ProductStyle.img}`}>
-                  <button className={ProductStyle.addToCart}>
+                  <button
+                    className={ProductStyle.addToCart}
+                    onClick={() =>
+                      addToCart({
+                        name: "Vintage Inspired Classic",
+                        price: 93.2,
+                      })
+                    }
+                  >
                     Add To Cart
                   </button>
                 </div>
@@ -129,7 +174,15 @@ function Product() {
             <div className={ProductStyle.productContent}>
               <div className={ProductStyle.imgContainer}>
                 <div className={`${ProductStyle.img7} ${ProductStyle.img}`}>
-                  <button className={ProductStyle.addToCart}>
+                  <button
+                    className={ProductStyle.addToCart}
+                    onClick={() =>
+                      addToCart({
+                        name: "Shirt in Stretch Cotton",
+                        price: 52.66,
+                      })
+                    }
+                  >
                     Add To Cart
                   </button>
                 </div>
@@ -147,7 +200,15 @@ function Product() {
             <div className={ProductStyle.productContent}>
               <div className={ProductStyle.imgContainer}>
                 <div className={`${ProductStyle.img8} ${ProductStyle.img}`}>
-                  <button className={ProductStyle.addToCart}>
+                  <button
+                    className={ProductStyle.addToCart}
+                    onClick={() =>
+                      addToCart({
+                        name: "Pieces Metallic Printed",
+                        price: 18.96,
+                      })
+                    }
+                  >
                     Add To Cart
                   </button>
                 </div>
@@ -167,7 +228,15 @@ function Product() {
             <div className={ProductStyle.productContent}>
               <div className={ProductStyle.imgContainer}>
                 <div className={`${ProductStyle.img9} ${ProductStyle.img}`}>
-                  <button className={ProductStyle.addToCart}>
+                  <button
+                    className={ProductStyle.addToCart}
+                    onClick={() =>
+                      addToCart({
+                        name: "Converse All Star Hi Plimsolls",
+                        price: 75.0,
+                      })
+                    }
+                  >
                     Add To Cart
                   </button>
                 </div>
@@ -185,7 +254,15 @@ function Product() {
             <div className={ProductStyle.productContent}>
               <div className={ProductStyle.imgContainer}>
                 <div className={`${ProductStyle.img10} ${ProductStyle.img}`}>
-                  <button className={ProductStyle.addToCart}>
+                  <button
+                    className={ProductStyle.addToCart}
+                    onClick={() =>
+                      addToCart({
+                        name: "Femme T-Shirt In Stripe",
+                        price: 25.85,
+                      })
+                    }
+                  >
                     Add To Cart
                   </button>
                 </div>
@@ -203,7 +280,12 @@ function Product() {
             <div className={ProductStyle.productContent}>
               <div className={ProductStyle.imgContainer}>
                 <div className={`${ProductStyle.img11} ${ProductStyle.img}`}>
-                  <button className={ProductStyle.addToCart}>
+                  <button
+                    className={ProductStyle.addToCart}
+                    onClick={() =>
+                      addToCart({ name: "Herschel supply", price: 63.16 })
+                    }
+                  >
                     Add To Cart
                   </button>
                 </div>
@@ -219,7 +301,12 @@ function Product() {
             <div className={ProductStyle.productContent}>
               <div className={ProductStyle.imgContainer}>
                 <div className={`${ProductStyle.img12} ${ProductStyle.img}`}>
-                  <button className={ProductStyle.addToCart}>
+                  <button
+                    className={ProductStyle.addToCart}
+                    onClick={() =>
+                      addToCart({ name: "Herschel supply", price: 63.15 })
+                    }
+                  >
                     Add To Cart
                   </button>
                 </div>
@@ -237,7 +324,12 @@ function Product() {
             <div className={ProductStyle.productContent}>
               <div className={ProductStyle.imgContainer}>
                 <div className={`${ProductStyle.img13} ${ProductStyle.img}`}>
-                  <button className={ProductStyle.addToCart}>
+                  <button
+                    className={ProductStyle.addToCart}
+                    onClick={() =>
+                      addToCart({ name: "T-Shirt with Sleeve", price: 18.49 })
+                    }
+                  >
                     Add To Cart
                   </button>
                 </div>
@@ -253,7 +345,12 @@ function Product() {
             <div className={ProductStyle.productContent}>
               <div className={ProductStyle.imgContainer}>
                 <div className={`${ProductStyle.img14} ${ProductStyle.img}`}>
-                  <button className={ProductStyle.addToCart}>
+                  <button
+                    className={ProductStyle.addToCart}
+                    onClick={() =>
+                      addToCart({ name: "Pretty Little Thing", price: 54.79 })
+                    }
+                  >
                     Add To Cart
                   </button>
                 </div>
@@ -269,7 +366,15 @@ function Product() {
             <div className={ProductStyle.productContent}>
               <div className={ProductStyle.imgContainer}>
                 <div className={`${ProductStyle.img15} ${ProductStyle.img}`}>
-                  <button className={ProductStyle.addToCart}>
+                  <button
+                    className={ProductStyle.addToCart}
+                    onClick={() =>
+                      addToCart({
+                        name: "Mini Silver Mesh Watch",
+                        price: 86.85,
+                      })
+                    }
+                  >
                     Add To Cart
                   </button>
                 </div>
@@ -287,7 +392,12 @@ function Product() {
             <div className={ProductStyle.productContent}>
               <div className={ProductStyle.imgContainer}>
                 <div className={`${ProductStyle.img16} ${ProductStyle.img}`}>
-                  <button className={ProductStyle.addToCart}>
+                  <button
+                    className={ProductStyle.addToCart}
+                    onClick={() =>
+                      addToCart({ name: "Square Neck Back", price: 29.64 })
+                    }
+                  >
                     Add To Cart
                   </button>
                 </div>
@@ -301,7 +411,57 @@ function Product() {
               <span className={ProductStyle.price}>$29.64</span>
             </div>
           </div>
-          <div className={ProductStyle.moreBtn}><button className={ProductStyle.loadMore}>Load More</button></div>
+          <div className={ProductStyle.moreBtn}>
+            <button className={ProductStyle.loadMore}>Load More</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        {/* offcanvas menu */}
+        <span onClick={() => setIsOpen(true)} className={ProductStyle.cartBtn}>
+          <i class="fa-solid fa-cart-shopping fa-lg"></i>
+        </span>
+        <div
+          className={`overlay ${isOpen ? "show" : ""}`}
+          onClick={() => setIsOpen(false)}
+        ></div>
+        <div className={`sidebar ${isOpen ? "open" : ""}`}>
+          <button className="close-btn" onClick={() => setIsOpen(false)}>
+            ✖
+          </button>
+          {/* add to cart */}
+          <div
+            style={{
+              width: "100%",
+            }}
+          >
+            <span
+              style={{
+                fontFamily: "sans-serif",
+                textAlign: "center",
+                marginLeft: "100px",
+                fontSize: "1.5rem",
+              }}
+            >
+              Your Cart
+            </span>
+            <hr />
+            <ul className="cartList">
+              {cart.map((item, index) => (
+                <li key={index} className="cartLi">
+                  {item.name} - ${item.price}
+                  <button
+                    className="productCartBtn"
+                    onClick={() => removeFromCart(index)}
+                  >
+                    Remove
+                  </button>
+                </li>
+              ))}
+            </ul>
+            <hr style={{marginBottom:'20px' , marginTop:'20px'}} />
+            <span className="totalPrice">Total Price : {totalPrice} $</span>
+          </div>
         </div>
       </div>
     </>

@@ -257,3 +257,22 @@
     display: flex;
     justify-content: center;
 }
+.cartBtn i{
+    color: white;
+}
+.cartBtn{
+    background-color: #7180e083;
+    position: fixed;
+    top: 50%;
+    right: 0px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 10px 15px ;
+    transition: .4s ease;
+    cursor: pointer;
+    transform: translateX(5px);
+}
+.cartBtn:hover{
+    background-color: #717fe0;
+    transform: translateX(0px);
+}
