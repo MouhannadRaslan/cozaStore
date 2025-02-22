@@ -63,9 +63,10 @@ th{
 }
 .cartTotal{
     width: 24%;
-    height: 70vh;
+    height: 90vh;
     border: 1px solid rgba(42, 42, 42, 0.306);
     margin-left: 20px;
+    padding: 40px 50px;
 }
 .coupon{
     padding: 15px;
@@ -100,5 +101,83 @@ th{
 }
 .update:hover{
     color: white;
+    background-color: #717fe0;
+}
+.totalHeader{
+    font-family: sans-serif;
+    font-weight: 700;
+    color: black;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.subtotal{
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+.shipping{
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+.shippingPrg{
+    font-size: 13px;
+    color: gray;
+    margin-left: 40px;
+    font-family: sans-serif;
+}
+.shippingText{
+    display: flex;
+    justify-content: space-around;
+}
+.updateTotal{
+    width: 60%;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.updateTotal h5{
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: 200;
+    margin-bottom: 10px;
+    color: rgb(128, 128, 128);
+}
+.updateTotal input{
+    height: 40px;
+    margin-bottom: 10px;
+    border:1px solid rgba(128, 128, 128, 0.432);
+    text-align: center;
+    font-size: .9rem;
+}
+.updateTotalBtn{
+    background-color: rgba(128, 128, 128, 0.366);
+    border: none;
+    padding: 10px  20px;
+    border-radius: 30px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    transition: .4s ease;
+}
+.updateTotalBtn:hover{
+    background-color: #717fe0;
+    color: white;
+}
+.total{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+.proceed{
+    text-transform: uppercase;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    transition: .4s ease;
+}
+.proceed:hover{
     background-color: #717fe0;
 }

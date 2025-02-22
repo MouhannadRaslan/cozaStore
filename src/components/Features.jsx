@@ -15,7 +15,7 @@ function Features() {
       <div className={FeaturesStyle.feature}>
         <p className={FeaturesStyle.subPrg}>
           <Link to="/" className={FeaturesStyle.home}>
-            Home →{" "}
+            Home →
           </Link>
           Shoping Cart
         </p>
@@ -80,7 +80,25 @@ function Features() {
               <button className={FeaturesStyle.update}>UPDATE CART</button>
             </div>
           </div>
-          <div className={FeaturesStyle.cartTotal}></div>
+          <div className={FeaturesStyle.cartTotal}>
+            <h3 className={FeaturesStyle.totalHeader}>CARD TOTALS</h3>
+            <h4 className={FeaturesStyle.subtotal}>Subtotal: <span style={{marginLeft:'40px'}}>$79.65</span></h4>
+            <hr style={{marginTop:'20px',marginBottom:'20px'}} />
+            <div className={FeaturesStyle.shippingText}>
+            <h4 className={FeaturesStyle.shipping}>Shipping:</h4>
+            <p className={FeaturesStyle.shippingPrg}>There are no shipping methods available. Please double check your address, or contact us if you need any help.</p>
+            </div>
+            <div className={FeaturesStyle.updateTotal}>
+                <h5>Calculate Shipping</h5>
+                <input type="text" placeholder="select a country" />
+                <input type="text" placeholder="State / country" />
+                <input type="text" placeholder="postcode / zip" />
+                <button className={FeaturesStyle.updateTotalBtn}>UPDATE TOTAL</button>
+            </div>
+            <hr style={{marginTop:'20px',marginBottom:'20px'}} />
+            <h4 className={FeaturesStyle.total}>Total: <span style={{marginLeft:'40px',fontSize:'15px',fontWeight:'300'}}>$79.65</span></h4>
+            <button className={FeaturesStyle.proceed}>proceed to checkout</button>
+          </div>
         </div>
       </div>
       <Footer />
