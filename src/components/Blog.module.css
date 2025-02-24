@@ -1,0 +1,225 @@
+.blog{
+    width: 100%;
+}
+.blogBanner{
+    width: 100%;
+    height: 240px;
+    background: url('../assets/blog.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.blogBanner h1{
+    color: white;
+    font-family: sans-serif;
+    font-size: 50px;
+}
+.blogContent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.leftSection{
+    width: 825px;
+    margin-right: 15px;
+}
+.rightSection{
+    width: 300px;
+    margin-left: 30px;
+    padding: 0 20px;
+}
+.firstImgContainer{
+    width: 100%;
+    height: 413px;
+    position: relative;
+    overflow: hidden;
+}
+.firstImg{
+    width: 100%;
+    height: 100%;
+    background: url('../assets/blog-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: .6s ease;
+    cursor: pointer;
+}
+.firstImg:hover{
+    transform: scale(1.1);
+}
+.blogText{
+    width: 100%;
+    margin-top: 30px;
+}
+.blogText h1{
+    font-family: sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    transition: .4s ease;
+    cursor: pointer;
+}
+.blogText h1:hover{
+    color: #717fe0;
+}
+.blogText p{
+    font-family: sans-serif;
+    opacity: .5;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+.secondImgContainer{
+    width: 100%;
+    height: 413px;
+    position: relative;
+    overflow: hidden;
+}
+.secondImg{
+    width: 100%;
+    height: 100%;
+    background: url('../assets/blog-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: .6s ease;
+    cursor: pointer;
+}
+.secondImg:hover{
+    transform: scale(1.1);
+}
+.thirdImgContainer{
+    width: 100%;
+    height: 413px;
+    position: relative;
+    overflow: hidden;
+}
+.thirdImg{
+    width: 100%;
+    height: 100%;
+    background: url('../assets/blog-3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: .6s ease;
+    cursor: pointer;
+}
+.thirdImg:hover{
+    transform: scale(1.1);
+}
+.circle{
+    display: flex;
+}
+.one{
+    background-color: gray;
+    color: white;
+    font-family: sans-serif ;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.two{
+    background-color: white;
+    color: black;
+    font-family: sans-serif ;
+    border-radius: 50%;
+    padding: 10px 15px;
+    border: 1px solid gray;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.two:hover{
+    background-color: gray;
+    color: white;
+}
+.searchInput{
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+}
+.search{
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.622);
+    border-radius: 40px;
+    padding: 15px 40px;
+    font-size: 18px;
+}
+.searchInput i{
+    position: absolute;
+    top: 38%;
+    right: 25px;
+    color: rgba(128, 128, 128, 0.622);
+    cursor: pointer;
+    transition: .4s ease;
+}
+.searchInput i:hover{
+    color: #717fe0;
+}
+.categories{
+    margin-bottom: 60px;
+}
+.categories h1{
+    font-size: 22px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+.categories a{
+    text-decoration: none;
+    padding: 15px 0;
+    display: block;
+    color: #888;
+    font-family: sans-serif;
+    border-bottom: 1px solid #8888886d;
+    transition: .4s ease;
+}
+.categories a:hover{
+    color: #717fe0;
+}
+.archive{
+    margin-bottom: 60px;
+}
+.archive h1{
+    font-size: 22px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+.archive a{
+    text-decoration: none;
+    display: block;
+    color: #888;
+    padding: 10px 0;
+    width: 100%;
+    font-family: sans-serif;
+    transition: .4s ease;
+}
+.archive a:hover{
+    color: #717fe0;
+}
+.archive a span{
+    margin-left:100px ;
+}
+.tags h1{
+    font-size: 22px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+.tags a{
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 25px;
+    border: 1px solid #888;
+    line-height: 2.2;
+    margin: 10px;
+    color: #888;
+    transition: .4s ease;
+    font-family: sans-serif;
+}
+.tags a:hover{
+    color: #717fe0;
+    border: 1px solid #717fe0;
+}

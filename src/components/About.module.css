@@ -1,0 +1,97 @@
+.about{
+    width: 100%;
+}
+.aboutBanner{
+    width: 100%;
+    height: 240px;
+    background: url('../assets/aboutBanner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.aboutBanner h1{
+    color: white;
+    font-family: sans-serif;
+    font-size: 50px;
+}
+.ourStory{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+.storyContent{
+    width: 680px;
+    margin-right: 60px;
+}
+.storyContent h1{
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.storyContent p{
+    color: #888;
+    font-family: sans-serif;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.storyImgContainer{
+    width: 370px;
+    height: 370px;
+    border: 3px solid #8888889d;
+    
+}
+.storyImg{
+    background: url('../assets/about-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+}
+.ourMission{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+.missionImgContainer{
+    width: 370px;
+    height: 370px;
+    border: 3px solid #8888889d;
+    
+}
+.missionImg{
+    background: url('../assets/about-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+}
+.missionContent{
+    width: 680px;
+    margin-left: 60px;
+}
+.missionContent h1{
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.missionContent p{
+    color: #888;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
